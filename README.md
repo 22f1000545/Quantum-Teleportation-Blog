@@ -1,1 +1,1 @@
-My infographic blog
+My infographic blog created
