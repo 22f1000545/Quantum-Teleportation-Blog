@@ -54,49 +54,27 @@
     .profile { width: 100px; height: 100px; background: linear-gradient(135deg, #22d3ee, #0891b2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto 20px; }
     footer { text-align: center; padding: 40px; color: #64748b; }
     .edit { background: rgba(6,182,212,0.1); padding: 2px 8px; border-radius: 4px; border: 1px dashed #22d3ee; }
+    .info-text { color: #cbd5e1; line-height: 1.8; margin-bottom: 15px; }
+    .protocol-list { background: #0f172a; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 3px solid #22d3ee; }
+    .protocol-list ol { margin-left: 20px; color: #cbd5e1; }
+    .protocol-list ol li { margin-bottom: 12px; line-height: 1.7; }
+    .protocol-list ul { margin-left: 20px; margin-top: 8px; }
+    .protocol-list ul li { margin-bottom: 6px; }
+    img { max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 10px; }
   </style>
 </head>
 <body>
 <div class="container">
 
-<!-- PAGE 1: TITLE -->
 <section style="text-align:center; padding:60px 40px;">
-  <div style="font-size:4rem; margin-bottom:20px;">⚛️</div>
   <h1>Quantum Teleportation</h1>
   <p class="subtitle">The Foundation of Quantum Internet</p>
   <p class="tagline">From Nobel Prize Science to Real-World Applications</p>
-  <div class="nobel">🏆 2022 Nobel Prize in Physics</div>
-  <div class="author-box">
-    <p style="font-size:1.2rem; font-weight:bold;" class="edit">[YOUR NAME]</p>
-    <p class="edit">[YOUR DEPARTMENT]</p>
-    <p class="edit">[YOUR UNIVERSITY]</p>
-    <p style="color:#22d3ee;">Quantum Machine Learning Course</p>
-  </div>
+  <div class="nobel">2022 Nobel Prize in Physics</div>
 </section>
 
-<!-- PAGE 2: ABOUT AUTHOR -->
 <section>
-  <h2>👤 About the Author</h2>
-  <div style="display:flex; gap:30px; align-items:flex-start; flex-wrap:wrap;">
-    <div class="profile">👨‍🎓</div>
-    <div style="flex:1; min-width:250px;">
-      <h3 class="edit">[YOUR NAME]</h3>
-      <p style="color:#22d3ee;" class="edit">[YOUR DEPARTMENT]</p>
-      <p class="edit">[YOUR UNIVERSITY]</p>
-      <div class="quote">"The quantum future is being built today"</div>
-      <p style="color:#94a3b8; font-size:0.9rem;" class="edit">[Write a brief introduction about yourself and your interest in quantum computing here]</p>
-      <div class="social">
-        <a href="#">LinkedIn</a>
-        <a href="#">Email</a>
-        <a href="#">GitHub</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PAGE 3: TABLE OF CONTENTS -->
-<section>
-  <h2>📋 Visual Roadmap</h2>
+  <h2>Visual Roadmap</h2>
   <div class="grid-3">
     <div class="card">1. The Sci-Fi Dream</div>
     <div class="card">2. What is Quantum Teleportation?</div>
@@ -113,38 +91,36 @@
   </div>
 </section>
 
-<!-- PAGE 4: SCI-FI VS REALITY -->
 <section>
-  <h2>🚀 The Sci-Fi Dream vs Reality</h2>
+  <h2>The Sci-Fi Dream vs Reality</h2>
   <div class="grid-2">
     <div class="card card-red">
-      <h3 style="color:#ef4444;">❌ Sci-Fi Teleportation</h3>
-      <ul style="list-style:none;">
-        <li>❌ Teleport physical matter/people</li>
-        <li>❌ Instant transport across space</li>
-        <li>❌ Copy and recreate objects</li>
-        <li>❌ Star Trek beam-up effect</li>
+      <h3 style="color:#ef4444;">Sci-Fi Teleportation</h3>
+      <ul>
+        <li>Teleport physical matter/people</li>
+        <li>Instant transport across space</li>
+        <li>Copy and recreate objects</li>
+        <li>Star Trek beam-up effect</li>
       </ul>
     </div>
     <div class="card card-green">
-      <h3 style="color:#10b981;">✓ Quantum Teleportation</h3>
-      <ul style="list-style:none;">
-        <li>✓ Teleport quantum information/states</li>
-        <li>✓ Requires classical communication</li>
-        <li>✓ Original destroyed (no cloning!)</li>
-        <li>✓ 2022 Nobel Prize winning science</li>
+      <h3 style="color:#10b981;">Quantum Teleportation</h3>
+      <ul>
+        <li>Teleport quantum information/states</li>
+        <li>Requires classical communication</li>
+        <li>Original destroyed (no cloning!)</li>
+        <li>2022 Nobel Prize winning science</li>
       </ul>
     </div>
   </div>
-  <div class="highlight"><p>💡 We teleport INFORMATION, not matter!</p></div>
+  <div class="highlight"><p>We teleport INFORMATION, not matter!</p></div>
 </section>
 
-<!-- PAGE 5: DEFINITION -->
 <section>
-  <h2>🔬 What is Quantum Teleportation?</h2>
-  <div class="card" style="text-align:center; padding:30px;">
-    <p style="font-size:1.2rem;"><strong>Definition:</strong> Transfer of a quantum state from one location to another</p>
-    <p style="color:#94a3b8;">The quantum state |ψ⟩ disappears at source, appears at destination</p>
+  <h2>What is Quantum Teleportation?</h2>
+  <div class="card" style="padding:30px;">
+    <p class="info-text"><strong>Definition:</strong> Quantum teleportation is a protocol where a sender (say, Alice) transmits a qubit to a receiver (say, Bob) by making use of a shared entangled quantum state (one e-bit, to be specific) along with two bits of classical communication. The name teleportation is meant to be suggestive of the concept in science fiction where matter is transported from one location to another by a futuristic process, but it must be understood that matter is not teleported in quantum teleportation — what is actually teleported is quantum information.</p>
+    <p class="info-text" style="color:#94a3b8; text-align:center;">The quantum state |ψ⟩ disappears at source, appears at destination</p>
   </div>
   <div style="display:flex; align-items:center; justify-content:center; gap:20px; margin:30px 0; flex-wrap:wrap;">
     <div class="card" style="text-align:center; padding:20px;">
@@ -163,40 +139,36 @@
   </div>
   <div class="grid-2">
     <div class="card card-red">
-      <strong style="color:#ef4444;">⚠️ NOT faster than light</strong>
-      <p style="margin:5px 0 0;">Needs classical communication channel</p>
+      <h3 style="color:#ef4444;">NOT faster than light</h3>
+      <p class="info-text">For Quantum Teleportation, the sender does not have to know the particular quantum state being transferred. Moreover, the location of the recipient can be unknown, but to complete the quantum teleportation, classical information needs to be sent from sender to receiver. Because classical information needs to be sent, quantum teleportation cannot occur faster than the speed of light.</p>
     </div>
     <div class="card card-blue">
-      <strong style="color:#22d3ee;">🔗 Uses Entanglement</strong>
-      <p style="margin:5px 0 0;">The "magic link" between particles</p>
+      <h3 style="color:#22d3ee;">Uses Entanglement</h3>
+      <p class="info-text">For actual teleportation, it is required that an entangled quantum state be created for the qubit to be transferred. Entanglement imposes statistical correlations between otherwise distinct physical systems by creating or placing two or more separate particles into a single, shared quantum state. This intermediate state contains two particles whose quantum states are related to each other: measuring one particle's state provides information about the measurement of the other particle's state.</p>
     </div>
   </div>
 </section>
 
-<!-- PAGE 6: THREE INGREDIENTS -->
 <section>
-  <h2>🧪 The Three Ingredients</h2>
+  <h2>The Three Ingredients</h2>
+  <p class="info-text">The process of quantum teleportation begins with an entangled pair of particles shared between two parties, often referred to as Alice and Bob. Alice wants to teleport the state of a qubit to Bob. By performing specific measurements on her particles and sending the results to Bob via classical communication, Bob can apply certain operations to his entangled particle to recreate the exact state that Alice wanted to teleport.</p>
   <div class="card card-purple" style="margin-bottom:15px;">
-    <div class="icon">🔗</div>
     <h3 style="color:#a855f7;">1. ENTANGLEMENT</h3>
-    <p>Two particles mysteriously connected. Measure one, instantly affects other.</p>
-    <p style="color:#a855f7; font-style:italic;">"Spooky action at a distance" — Einstein</p>
+    <p class="info-text">Two particles mysteriously connected. Measure one, instantly affects other.</p>
+    <p class="info-text" style="color:#a855f7; font-style:italic;">"Spooky action at a distance" — Einstein</p>
   </div>
   <div class="card card-blue" style="margin-bottom:15px;">
-    <div class="icon">📏</div>
     <h3 style="color:#22d3ee;">2. MEASUREMENT</h3>
-    <p>Alice measures her qubits. Quantum state collapses. Gets 2 classical bits of information.</p>
+    <p class="info-text">Alice measures her qubits. Quantum state collapses. Gets 2 classical bits of information.</p>
   </div>
   <div class="card card-green">
-    <div class="icon">📞</div>
     <h3 style="color:#10b981;">3. CLASSICAL COMMUNICATION</h3>
-    <p>Alice tells Bob her results via regular phone/internet. Bob uses info to reconstruct state.</p>
+    <p class="info-text">Alice tells Bob her results via regular phone/internet. Bob uses info to reconstruct state.</p>
   </div>
 </section>
 
-<!-- PAGE 7: ALICE AND BOB -->
 <section>
-  <h2>🤝 Meet Alice and Bob</h2>
+  <h2>Meet Alice and Bob</h2>
   <div class="grid-2">
     <div class="card card-pink" style="text-align:center;">
       <div style="font-size:4rem;">👩‍🔬</div>
@@ -222,54 +194,56 @@
   <div style="text-align:center; margin-top:20px;">
     <span style="display:inline-flex; align-items:center; gap:10px;">
       <span style="width:60px; height:3px; background:#ec4899;"></span>
-      <span style="background:rgba(6,182,212,0.2); border:1px solid #22d3ee; padding:5px 15px; border-radius:20px;">🔗 Entangled Pair</span>
+      <span style="background:rgba(6,182,212,0.2); border:1px solid #22d3ee; padding:5px 15px; border-radius:20px;">Entangled Pair</span>
       <span style="width:60px; height:3px; background:#22d3ee;"></span>
     </span>
   </div>
 </section>
 
-<!-- PAGE 8: 7-STEP PROTOCOL -->
 <section>
-  <h2>📝 The 7-Step Protocol</h2>
-  <div class="step"><span class="step-num">1</span><span>📦</span><span>Alice has quantum state |ψ⟩ she wants to send</span></div>
-  <div class="step"><span class="step-num">2</span><span>🔗</span><span>Alice and Bob already share an entangled Bell pair</span></div>
-  <div class="step"><span class="step-num">3</span><span>🎯</span><span>Alice entangles her state with her half of the pair</span></div>
-  <div class="step"><span class="step-num">4</span><span>📏</span><span>Alice measures both her qubits → gets 2 classical bits (00, 01, 10, or 11)</span></div>
-  <div class="step"><span class="step-num">5</span><span>📞</span><span>Alice sends classical bits to Bob (phone/internet)</span></div>
-  <div class="step"><span class="step-num">6</span><span>🔧</span><span>Bob applies correction gates based on Alice's bits</span></div>
-  <div class="step"><span class="step-num">7</span><span>✨</span><span>Bob now has exact state |ψ⟩! Alice's original is destroyed.</span></div>
+  <h2>The 7-Step Protocol</h2>
+  <div class="step"><span class="step-num">1</span><span>Alice has quantum state |ψ⟩ she wants to send</span></div>
+  <div class="step"><span class="step-num">2</span><span>Alice and Bob already share an entangled Bell pair</span></div>
+  <div class="step"><span class="step-num">3</span><span>Alice entangles her state with her half of the pair</span></div>
+  <div class="step"><span class="step-num">4</span><span>Alice measures both her qubits → gets 2 classical bits (00, 01, 10, or 11)</span></div>
+  <div class="step"><span class="step-num">5</span><span>Alice sends classical bits to Bob (phone/internet)</span></div>
+  <div class="step"><span class="step-num">6</span><span>Bob applies correction gates based on Alice's bits</span></div>
+  <div class="step"><span class="step-num">7</span><span>Bob now has exact state |ψ⟩ Alice's original is destroyed</span></div>
   <div class="card card-yellow" style="margin-top:20px;">
     <strong>Bob's Correction Rules:</strong>
     <p style="margin:10px 0 0;">00 → Do nothing &nbsp;|&nbsp; 01 → Apply X gate &nbsp;|&nbsp; 10 → Apply Z gate &nbsp;|&nbsp; 11 → Apply X then Z</p>
   </div>
 </section>
 
-<!-- PAGE 9: QUANTUM CIRCUIT -->
 <section>
-  <h2>⚡ The Quantum Circuit</h2>
-  <div class="diagram">
-Alice's qubit (ψ): ─────●────H────M──→ Classical bit 1
-                        │         ║
-Entangled (Alice): ─────X────────M──→ Classical bit 0
-                                  ║
-Entangled (Bob):   ──────────────X────Z──→ Output |ψ⟩
-                                  ↑    ↑
-                           Corrections based on
-                           Alice's measurements
+  <h2>The Quantum Circuit</h2>
+  <img src="D:\\Desktop\\MSc Data Science\\Trimester 5\\Quantum ML\\teleportation_circuit.svg" alt="Quantum Teleportation Circuit">
+  <p class="info-text">The diagram depicts the separation between Alice and Bob, with two diagonal wires representing classical bits that are sent from Alice to Bob. The qubit names are shown above the wires. It should also be noted that the X and Z gates have classical controls, which simply means that the gates are not applied or applied depending on whether these classical control bits are 0 or 1, respectively.</p>
+  
+  <div class="protocol-list">
+    <p class="info-text"><strong>The teleportation protocol is as follows:</strong></p>
+    <ol>
+      <li>Alice performs a controlled-NOT operation on the pair (A,Q), with Q being the control and A being the target, and then performs a Hadamard operation on Q.</li>
+      <li>Alice then measures both A and Q, with respect to a standard basis measurement in both cases, and transmits the classical outcomes to Bob. Let us refer to the outcome of the measurement of A as a and the outcome of the measurement of Q as b.</li>
+      <li>Bob receives a and b from Alice, and depending on the values of these bits he performs these operations:
+        <ul>
+          <li>If a=1, then Bob performs a bit flip (or X gate) on his qubit B.</li>
+          <li>If b=1, then Bob performs a phase flip (or Z gate) on his qubit B.</li>
+        </ul>
+        That is, conditioned on ab being 00, 01, 10, or 11, Bob performs one of the operations I, Z, X, or ZX on the qubit B.
+      </li>
+    </ol>
   </div>
-  <div class="grid-3">
-    <div class="card card-blue"><strong>●─X</strong><br>Create Bell pair</div>
-    <div class="card card-purple"><strong>●─X</strong><br>Alice's CNOT</div>
-    <div class="card card-pink"><strong>H</strong><br>Hadamard gate</div>
-    <div class="card"><strong>M</strong><br>Measurement</div>
-    <div class="card card-green"><strong>X, Z</strong><br>Bob's corrections</div>
-    <div class="card card-yellow"><strong>→</strong><br>Teleported state!</div>
-  </div>
+  
+  <p class="info-text">This is the complete description of the teleportation protocol.</p>
+  
+  <p class="info-text">The analysis reveals that when the above process is run, the qubit B will be in whatever state Q was in prior to the protocol being executed, including whatever correlations it had with any other systems — which is to say that the protocol has effectively implemented a perfect qubit communication channel, where the state of Q has been "teleported" into B.</p>
+  
+  <p class="info-text">Notice that this protocol does not succeed in cloning the state of Q, which we already know is impossible by the no-cloning theorem. Rather, when the protocol is finished, the state of the qubit Q will have changed from its original value to ∣b⟩ as a result of the measurement performed on it. Also notice that the e-bit has effectively been "burned" in the process: the state of A has changed to ∣a⟩ and is no longer entangled with B (or any other system). This is the cost of teleportation.</p>
 </section>
 
-<!-- PAGE 10: CODE -->
 <section>
-  <h2>💻 Code Implementation (Qiskit)</h2>
+  <h2>Code Implementation (Qiskit)</h2>
   <div class="code-block"><span class="comment"># QUANTUM TELEPORTATION IN QISKIT</span>
 <span class="keyword">from</span> qiskit <span class="keyword">import</span> QuantumCircuit
 <span class="keyword">from</span> qiskit_aer <span class="keyword">import</span> Aer
@@ -301,12 +275,11 @@ qc.<span class="function">cz</span>(<span class="number">0</span>, <span class="
 
 <span class="comment"># TELEPORTATION COMPLETE!</span>
 <span class="function">print</span>(<span class="string">"Success! State teleported."</span>)</div>
-  <div class="highlight"><p>🎉 Just ~20 lines of code to teleport quantum information!</p></div>
+  <div class="highlight"><p>Just ~20 lines of code to teleport quantum information!</p></div>
 </section>
 
-<!-- PAGE 11: RESULTS -->
 <section>
-  <h2>📊 Simulation Results</h2>
+  <h2>Simulation Results</h2>
   <div class="grid-2">
     <div class="card">
       <h3>Measurement Histogram</h3>
@@ -321,100 +294,88 @@ qc.<span class="function">cz</span>(<span class="number">0</span>, <span class="
         <p>Success Rate (Simulator)</p>
       </div>
       <div class="card card-blue" style="text-align:center;">
-        <p style="font-size:1.5rem; font-weight:bold; color:#22d3ee;">State |1⟩ ✓</p>
+        <p style="font-size:1.5rem; font-weight:bold; color:#22d3ee;">State |1⟩</p>
         <p>Successfully Teleported!</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PAGE 12: HUMANS -->
 <section>
-  <h2>🚫 Can We Teleport Humans?</h2>
+  <h2>Can We Teleport Humans?</h2>
   <p style="text-align:center; font-size:1.5rem; color:#ef4444; font-weight:bold; margin-bottom:20px;">Not now, probably never!</p>
   <div class="grid-2">
     <div class="card card-red">
-      <div class="icon">🔢</div>
       <h3 style="color:#ef4444;">TOO MANY ATOMS</h3>
-      <p>Human = 10²⁸ atoms<br>We have ~1,000 qubits</p>
+      <p class="info-text">Human = 10²⁸ atoms<br>We have ~1,000 qubits</p>
     </div>
     <div class="card card-red">
-      <div class="icon">💀</div>
       <h3 style="color:#ef4444;">DESTRUCTION REQUIRED</h3>
-      <p>Original must be destroyed<br>(Would you die?)</p>
+      <p class="info-text">Original must be destroyed<br>(Would you die?)</p>
     </div>
     <div class="card card-red">
-      <div class="icon">📐</div>
       <h3 style="color:#ef4444;">HEISENBERG LIMIT</h3>
-      <p>Can't precisely measure all atom positions simultaneously</p>
+      <p class="info-text">Can't precisely measure all atom positions simultaneously</p>
     </div>
     <div class="card card-red">
-      <div class="icon">🤔</div>
       <h3 style="color:#ef4444;">PHILOSOPHICAL PROBLEM</h3>
-      <p>Is the copy really "you"?</p>
+      <p class="info-text">Is the copy really "you"?</p>
     </div>
   </div>
 </section>
 
-<!-- PAGE 13: APPLICATIONS -->
 <section>
-  <h2>🌐 Real Applications Today</h2>
+  <h2>Real Applications Today</h2>
   <div class="grid-2">
     <div class="card card-blue">
-      <div class="icon">🌍</div>
       <h3 style="color:#22d3ee;">QUANTUM INTERNET</h3>
-      <p>Connect quantum computers globally. Unhackable communication networks. Timeline: Prototypes by 2030.</p>
+      <p class="info-text">Connect quantum computers globally. Unhackable communication networks. Timeline: Prototypes by 2030.</p>
     </div>
     <div class="card card-green">
-      <div class="icon">🔐</div>
       <h3 style="color:#10b981;">QUANTUM CRYPTOGRAPHY</h3>
-      <p>Detect any eavesdropping instantly. Physics-guaranteed security. Already used by banks & military.</p>
+      <p class="info-text">Detect any eavesdropping instantly. Physics-guaranteed security. Already used by banks & military.</p>
     </div>
     <div class="card card-purple">
-      <div class="icon">⚡</div>
       <h3 style="color:#a855f7;">DISTRIBUTED QUANTUM COMPUTING</h3>
-      <p>Share quantum resources. Build larger quantum systems. Cloud quantum services.</p>
+      <p class="info-text">Share quantum resources. Build larger quantum systems. Cloud quantum services.</p>
     </div>
     <div class="card card-yellow">
-      <div class="icon">📡</div>
       <h3 style="color:#fbbf24;">QUANTUM SENSING</h3>
-      <p>Ultra-precise measurements. GPS alternatives. Medical imaging advances.</p>
+      <p class="info-text">Ultra-precise measurements. GPS alternatives. Medical imaging advances.</p>
     </div>
   </div>
 </section>
 
-<!-- PAGE 14: TIMELINE -->
 <section>
-  <h2>🏆 Achievements & Records</h2>
-  <div class="timeline"><span class="timeline-year">1993</span><span>📝</span><span>Theoretical proposal (Bennett et al.)</span></div>
-  <div class="timeline"><span class="timeline-year">1997</span><span>🔬</span><span>First experimental demonstration (Zeilinger) - across lab table</span></div>
-  <div class="timeline"><span class="timeline-year">2004</span><span>🌊</span><span>Teleportation over 600m fiber optic</span></div>
-  <div class="timeline"><span class="timeline-year">2012</span><span>🏔️</span><span>143km teleportation (Canary Islands)</span></div>
-  <div class="timeline"><span class="timeline-year">2017</span><span>🛰️</span><span>1,400km to space satellite (China's Micius)</span></div>
-  <div class="timeline" style="background:rgba(251,191,36,0.2); border:1px solid #fbbf24;"><span class="timeline-year" style="color:#fbbf24;">2022</span><span>🏆</span><span style="color:#fbbf24; font-weight:bold;">NOBEL PRIZE to Zeilinger for this work!</span></div>
-  <div class="highlight"><p>🚀 Distance Record: 1,400 km to space!</p></div>
+  <h2>Achievements & Records</h2>
+  <div class="timeline"><span class="timeline-year">1993</span><span>Theoretical proposal (Bennett et al.)</span></div>
+  <div class="timeline"><span class="timeline-year">1997</span><span>First experimental demonstration (Zeilinger) - across lab table</span></div>
+  <div class="timeline"><span class="timeline-year">2004</span><span>Teleportation over 600m fiber optic</span></div>
+  <div class="timeline"><span class="timeline-year">2012</span><span>143km teleportation (Canary Islands)</span></div>
+  <div class="timeline"><span class="timeline-year">2017</span><span>1,400km to space satellite (China's Micius)</span></div>
+  <div class="timeline" style="background:rgba(251,191,36,0.2); border:1px solid #fbbf24;"><span class="timeline-year" style="color:#fbbf24;">2022</span><span style="color:#fbbf24; font-weight:bold;">NOBEL PRIZE to Zeilinger for this work!</span></div>
+  <div class="highlight"><p>Distance Record: 1,400 km to space!</p></div>
 </section>
 
-<!-- PAGE 15: WHY THIS MATTERS -->
 <section>
-  <h2>💡 Why This Matters</h2>
+  <h2>Why This Matters</h2>
   <div class="card card-blue" style="margin-bottom:15px;">
-    <h3 style="color:#22d3ee;">🔬 SCIENTIFIC IMPORTANCE</h3>
+    <h3 style="color:#22d3ee;">SCIENTIFIC IMPORTANCE</h3>
     <ul><li>2022 Nobel Prize in Physics</li><li>Foundation for quantum internet</li><li>Proves quantum mechanics works at large scales!</li></ul>
   </div>
   <div class="card card-green" style="margin-bottom:15px;">
-    <h3 style="color:#10b981;">💰 INDUSTRY INVESTMENT</h3>
+    <h3 style="color:#10b981;">INDUSTRY INVESTMENT</h3>
     <ul><li>$10+ billion invested globally</li><li>IBM, Google, Microsoft actively developing</li><li>China leading satellite-based development</li></ul>
   </div>
   <div class="card card-purple">
-    <h3 style="color:#a855f7;">🔮 FUTURE VISION</h3>
+    <h3 style="color:#a855f7;">FUTURE VISION</h3>
     <ul><li>Global quantum network by 2035</li><li>Unhackable internet infrastructure</li><li>Distributed quantum computing worldwide</li></ul>
   </div>
 </section>
 
-<!-- PAGE 16: TAKEAWAYS -->
+<!-- PAGE 15: TAKEAWAYS -->
 <section>
-  <h2>✅ Key Takeaways</h2>
+  <h2>Key Takeaways</h2>
   <div class="takeaway"><span class="check">✓</span><span>Quantum teleportation is REAL science (Nobel Prize 2022)</span></div>
   <div class="takeaway"><span class="check">✓</span><span>Teleports INFORMATION, not matter</span></div>
   <div class="takeaway"><span class="check">✓</span><span>Requires entanglement + measurement + classical communication</span></div>
@@ -422,40 +383,8 @@ qc.<span class="function">cz</span>(<span class="number">0</span>, <span class="
   <div class="takeaway"><span class="check">✓</span><span>Foundation for quantum internet and secure communication</span></div>
 </section>
 
-<!-- PAGE 17: RESOURCES -->
-<section>
-  <h2>📚 Try It Yourself!</h2>
-  <div class="grid-3">
-    <div class="card">
-      <h3>🎓 LEARN MORE</h3>
-      <ul style="list-style:none;">
-        <li>• IBM Quantum Experience (FREE)</li>
-        <li>• Qiskit Textbook online</li>
-        <li>• YouTube tutorials</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>💻 RUN THE CODE</h3>
-      <ul style="list-style:none;">
-        <li>• Google Colab notebooks</li>
-        <li>• IBM Quantum Lab</li>
-        <li>• GitHub repositories</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>📱 CONNECT</h3>
-      <ul style="list-style:none;">
-        <li class="edit">• LinkedIn: [Your Profile]</li>
-        <li class="edit">• Medium: [Your Blog]</li>
-        <li class="edit">• Email: [Your Email]</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- PAGE 18: CONCLUSION -->
+<!-- PAGE 16: CONCLUSION -->
 <section style="text-align:center; padding:60px 40px;">
-  <div style="font-size:4rem; margin-bottom:20px;">⚛️</div>
   <div class="quote" style="max-width:600px; margin:0 auto 30px; text-align:center;">
     <p style="font-size:1.3rem; margin:0;">"Quantum teleportation transforms science fiction into science fact"</p>
   </div>
@@ -465,22 +394,7 @@ qc.<span class="function">cz</span>(<span class="number">0</span>, <span class="
   <p style="color:#22d3ee; font-weight:bold; font-size:1.2rem; margin-bottom:30px;">
     The quantum future is being built today. Join the journey!
   </p>
-  <div class="social">
-    <a href="#">LinkedIn</a>
-    <a href="#">Medium</a>
-    <a href="#">GitHub</a>
-  </div>
-  <div class="author-box" style="margin-top:30px; display:inline-block;">
-    <p class="edit">[YOUR NAME]</p>
-    <p class="edit" style="font-size:0.9rem;">[YOUR UNIVERSITY]</p>
-    <p style="color:#22d3ee; font-size:0.9rem;">Quantum Machine Learning Course</p>
-  </div>
 </section>
-
-<footer>
-  <p>Created for Quantum Machine Learning Course</p>
-  <p style="margin-top:10px;">© 2024 | All Rights Reserved</p>
-</footer>
 
 </div>
 </body>
